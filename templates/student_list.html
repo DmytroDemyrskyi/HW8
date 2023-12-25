@@ -1,0 +1,4 @@
+{% for student in students %}
+<a href="{% url 'student_edit' student.id %}">ID: {{ student.id }}</a>
+Ім'я: {{ student.full_name}} Рік: {{ student.year }} Телефон: {{ student.phone }} Группа: {{ student.group.name }}<br>
+{% endfor %}

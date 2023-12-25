@@ -1,0 +1,6 @@
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="OK">
+    <a href="{% url 'student_delete' student.pk %}" class="btn btn-danger">Удалить</a>
+</form>

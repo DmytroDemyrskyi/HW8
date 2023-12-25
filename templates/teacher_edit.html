@@ -1,0 +1,6 @@
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="OK">
+    <a href="{% url 'teacher_delete' teacher.pk %}" class="btn btn-danger">Удалить</a>
+</form>

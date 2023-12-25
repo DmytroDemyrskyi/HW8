@@ -1,0 +1,13 @@
+{% for teacher in teachers %}
+<a href="{% url 'teacher_edit' teacher.id %}">ID: {{ teacher.id }}</a>
+Ім'я: {{ teacher.full_name}} <br>
+<a href="/{{ teacher.photo }}">{{ teacher.photo }}</a>
+Група:
+{% for group in teacher.groups.all %}
+{{ group.name }}
+{% empty %}
+В цього викладача немає груп
+{% endfor %}
+<br>
+<br>
+{% endfor %}

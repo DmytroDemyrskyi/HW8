@@ -1,0 +1,10 @@
+{% for group in groups %}
+<a href="{% url 'group_edit' group.id %}">ID: {{ group.id }}</a>
+Група: {{ group.name }} Куратор: {{ group.teacher.full_name }} <br>
+{% for student in group.students.all %}
+ID студента: {{ student.pk }}: {{ student.full_name }} (Year: {{ student.year }}) <br>
+{% empty %}
+В цій групі немає студентів <br>
+{% endfor %}
+<br>
+{% endfor %}

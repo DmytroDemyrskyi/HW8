@@ -1,0 +1,4 @@
+Path: /school/students/, Method: GET, Execution time: 0.035553932189941406
+Path: /school/student/10, Method: GET, Execution time: 0.02290511131286621
+Path: /school/student/10, Method: POST, Execution time: 0.01077127456665039
+Path: /school/student/10, Method: GET, Execution time: 0.012723922729492188
